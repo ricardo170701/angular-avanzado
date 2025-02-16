@@ -5,11 +5,10 @@ import { Product } from '@shared/models/product.model';
 import { CartService } from '@shared/services/cart.service';
 
 @Component({
-  selector: 'app-product-detail',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './product-detail.component.html',
-  styleUrls: ['./product-detail.component.css']
+    selector: 'app-product-detail',
+    imports: [CommonModule],
+    templateUrl: './product-detail.component.html',
+    styleUrls: ['./product-detail.component.css']
 })
 export default class ProductDetailComponent {
 

@@ -7,11 +7,10 @@ import { HeaderComponent } from '@shared/components/header/header.component';
 import { WaveAudioComponent } from '@info/components/wave-audio/wave-audio.component';
 
 @Component({
-  selector: 'app-about',
-  standalone: true,
-  imports: [CommonModule, CounterComponent, WaveAudioComponent, HighlightDirective, HeaderComponent],
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+    selector: 'app-about',
+    imports: [CommonModule, CounterComponent, WaveAudioComponent, HighlightDirective, HeaderComponent],
+    templateUrl: './about.component.html',
+    styleUrls: ['./about.component.css']
 })
 export default class AboutComponent {
   duration = signal(1000);
