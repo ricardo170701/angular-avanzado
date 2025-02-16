@@ -9,8 +9,7 @@ import { WaveAudioComponent } from '@info/components/wave-audio/wave-audio.compo
 @Component({
     selector: 'app-about',
     imports: [CommonModule, CounterComponent, WaveAudioComponent, HighlightDirective, HeaderComponent],
-    templateUrl: './about.component.html',
-    styleUrls: ['./about.component.css']
+    templateUrl: './about.component.html'
 })
 export default class AboutComponent {
   duration = signal(1000);

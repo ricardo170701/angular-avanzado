@@ -7,8 +7,7 @@ import { CartService } from '@shared/services/cart.service';
 @Component({
     selector: 'app-product-detail',
     imports: [CommonModule],
-    templateUrl: './product-detail.component.html',
-    styleUrls: ['./product-detail.component.css']
+    templateUrl: './product-detail.component.html'
 })
 export default class ProductDetailComponent {
 
@@ -30,7 +29,6 @@ export default class ProductDetailComponent {
         }
       })
     }
-    
   }
 
   changeCover(newImg: string) {

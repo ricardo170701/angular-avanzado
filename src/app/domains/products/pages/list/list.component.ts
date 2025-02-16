@@ -12,8 +12,7 @@ import { Category } from '@shared/models/category.model';
 @Component({
     selector: 'app-list',
     imports: [CommonModule, ProductComponent, HeaderComponent, RouterLinkWithHref],
-    templateUrl: './list.component.html',
-    styleUrls: ['./list.component.css']
+    templateUrl: './list.component.html'
 })
 export default class ListComponent {
 

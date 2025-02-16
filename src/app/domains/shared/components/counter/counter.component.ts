@@ -4,8 +4,7 @@ import { CommonModule } from '@angular/common';
 @Component({
     selector: 'app-counter',
     imports: [CommonModule],
-    templateUrl: './counter.component.html',
-    styleUrls: ['./counter.component.css']
+    templateUrl: './counter.component.html'
 })
 export class CounterComponent {
   @Input({required: true}) duration = 0;

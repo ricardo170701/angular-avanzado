@@ -6,8 +6,7 @@ import WaveSurfer from 'wavesurfer.js';
 @Component({
     selector: 'app-wave-audio',
     imports: [CommonModule],
-    templateUrl: './wave-audio.component.html',
-    styleUrls: ['./wave-audio.component.css']
+    templateUrl: './wave-audio.component.html'
 })
 export class WaveAudioComponent {
 

@@ -9,7 +9,6 @@ import { TimeAgoPipe } from '@shared/pipes/time-ago.pipe';
     selector: 'app-product',
     imports: [CommonModule, ReversePipe, TimeAgoPipe, RouterLinkWithHref],
     templateUrl: './product.component.html',
-    styleUrls: ['./product.component.css']
 })
 export class ProductComponent {
   @Input({required: true}) product!: Product;
