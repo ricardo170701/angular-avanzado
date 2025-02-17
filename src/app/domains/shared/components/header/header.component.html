@@ -1,19 +1,26 @@
 <nav>
     <div
-      class="w-full flex flex-wrap items-center justify-between mx-auto py-4"
+      class="w-full flex flex-wrap items-center justify-between mx-auto py-4 px-4 md:px-0"
     >
-      <div class="flex items-center space-x-8">
-        <a href="/" class="flex items-center ">
-          <img
-            src="/assets/logo.png"
-            class="h-10 mr-1"
-            alt="Flowbite Logo"
-          />
-          <span class="self-center text-xl font-semibold whitespace-nowrap"
-            >NgStore</span
-          >
-        </a>
-        <ul class="flex space-x-6">
+      <div class="flex items-center">
+        <button (click)="toggleMenu()" data-collapse-toggle="navbar-default" type="button" class="mr-4 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+      <a href="/" class="flex items-center mr-10">
+        <img
+          src="/assets/logo.png"
+          class="h-10"
+          alt="NgStore"
+        />
+        <span class="self-center text-xl font-semibold whitespace-nowrap"
+          >NgStore</span
+        >
+      </a>
+      <div class="flex-col items-center border rounded-lg absolute top-20 left-3 bg-white p-4 md:relative md:top-0 md:left-0 md:flex md:flex-row md:space-x-4 md:border-none md:p-0" [class.hidden]="!showMenu()" >
+        <ul class="flex flex-col space-y-4 mb-4 md:flex-row md:space-y-0 md:space-x-4 md:mb-0">
           <li>
             <a
               routerLink="/"
@@ -50,6 +57,7 @@
           </li>
         </ul>
         <app-search />
+      </div>
       </div>
       <div class="flex items-center">
         <button class="p-2 border rounded relative" (click)="toogleSideMenu()">
