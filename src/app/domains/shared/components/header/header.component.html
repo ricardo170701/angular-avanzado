@@ -1,6 +1,6 @@
 <nav>
     <div
-      class="w-full flex flex-wrap items-center justify-between mx-auto py-4 px-4 md:px-0"
+      class="w-full flex flex-wrap items-center justify-between mx-auto py-4"
     >
       <div class="flex items-center">
         <button (click)="toggleMenu()" data-collapse-toggle="navbar-default" type="button" class="mr-4 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
@@ -19,7 +19,7 @@
           >NgStore</span
         >
       </a>
-      <div class="flex-col items-center border rounded-lg absolute top-20 left-3 bg-white p-4 md:relative md:top-0 md:left-0 md:flex md:flex-row md:space-x-4 md:border-none md:p-0" [class.hidden]="!showMenu()" >
+      <div class="flex-col items-center border rounded-lg absolute top-16 left-3 bg-white p-4 md:relative md:top-0 md:left-0 md:flex md:flex-row md:space-x-4 md:border-none md:p-0" [class.hidden]="!showMenu()" >
         <ul class="flex flex-col space-y-4 mb-4 md:flex-row md:space-y-0 md:space-x-4 md:mb-0">
           <li>
             <a
