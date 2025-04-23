@@ -31,6 +31,7 @@ module.exports = tseslint.config(
           style: "kebab-case",
         },
       ],
+      "@angular-eslint/no-input-rename":"off",
     },
   },
   {
